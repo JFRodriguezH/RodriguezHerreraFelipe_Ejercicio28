@@ -1,4 +1,4 @@
-tiro.png : tiro.dat tiro.py
+friccion.png : tiro.dat friccion.dat tiro.py
 	python tiro.py
 	
 tiro.dat : tiro.out

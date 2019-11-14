@@ -9,4 +9,11 @@ y = data[:,2]
 vx = data[:,3]
 vy = data[:,4]
 plt.plot(x, y)
-plt.savefig("tiro.png")
+data = np.loadtxt("friccion.dat")
+t = data[:,0]
+x = data[:,1]
+y = data[:,2]
+vx = data[:,3]
+vy = data[:,4]
+plt.plot(x, y)
+plt.savefig("friccion.png")
