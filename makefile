@@ -11,4 +11,4 @@ tiro.out : tiro.cpp
 	c++ tiro.cpp -o tiro.out
 	
 clear :
-	rm tiro.dat tiro.out tiro.png
+	rm tiro.dat tiro.out friccion.png friccion.dat
