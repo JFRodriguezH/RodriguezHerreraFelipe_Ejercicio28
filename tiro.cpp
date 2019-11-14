@@ -31,6 +31,22 @@ int main(){
 		rk(k, h, x, y, vx, vy, t);
     }
     outfile.close();
+    
+    double k = 0.0;
+	double t = t_0;
+	double y = y_0;
+	double vy = vy_0;
+    double x = x_0;
+	double vx = vx_0;
+	
+	outfile.open("friccion.dat");
+    outfile << t << " "<< x << " " << y << " "<< vx << " " << vy << std::endl;
+	rk(k, h, x, y, vx, vy, t);
+    while(y>0){
+        outfile << t << " "<< x << " " << y << " "<< vx << " " << vy << std::endl;
+		rk(k, h, x, y, vx, vy, t);
+    }
+    outfile.close();
 	
 	return 0;
 }
