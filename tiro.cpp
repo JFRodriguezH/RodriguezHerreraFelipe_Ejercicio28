@@ -6,7 +6,7 @@ void rk(double k, double h, double & x, double & y, double & vy, double & vx, do
 std::ofstream outfile;
 
 double const n = 1.0;
-double const g = 9.81;
+double const g = 9.8;
 
 double const t_0 = 0.0;
 double const y_0 = 0.0;
