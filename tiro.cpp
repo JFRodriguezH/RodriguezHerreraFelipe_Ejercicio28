@@ -23,7 +23,7 @@ int main(){
     double x = x_0;
 	double vx = vx_0;
 	
-	outfile.open("tiro.dat");
+	outfile.open("friccion.dat");
     outfile << t << " "<< x << " " << y << " "<< vx << " " << vy << std::endl;
 	rk(k, h, x, y, vx, vy, t);
     while(y>0){
@@ -32,14 +32,14 @@ int main(){
     }
     outfile.close();
     
-    double k = 0.0;
-	double t = t_0;
-	double y = y_0;
-	double vy = vy_0;
-    double x = x_0;
-	double vx = vx_0;
+    k = 0.0;
+	t = t_0;
+	y = y_0;
+	vy = vy_0;
+    x = x_0;
+	vx = vx_0;
 	
-	outfile.open("friccion.dat");
+	outfile.open("tiro.dat");
     outfile << t << " "<< x << " " << y << " "<< vx << " " << vy << std::endl;
 	rk(k, h, x, y, vx, vy, t);
     while(y>0){
